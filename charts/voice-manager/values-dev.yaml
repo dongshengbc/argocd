@@ -1,0 +1,14 @@
+# Dev: minimal resources, single replica
+replicaCount: 1
+
+image:
+  tag: "v1.0.0"
+  pullPolicy: Never
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi

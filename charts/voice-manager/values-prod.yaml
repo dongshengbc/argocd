@@ -1,0 +1,14 @@
+# Prod: more resources, more replicas
+replicaCount: 5
+
+image:
+  tag: "v1.0.0"
+  pullPolicy: Always
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 512Mi
+  limits:
+    cpu: 1000m
+    memory: 1Gi
