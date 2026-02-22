@@ -17,9 +17,13 @@ spec:
     spec:
       containers:
         - name: voice-manager
-          image: nginx:1.27
+          image: ghcr.io/dongshengbc/voice-manager:v1.0.0
+          imagePullPolicy: Never
           ports:
-            - containerPort: 80
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
           resources:
             requests:
               cpu: 100m
